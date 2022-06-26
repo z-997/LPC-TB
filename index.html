@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #282e62;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 8px solid #fff;
+            background: url('./img/logo.jpg') no-repeat center;
+            background-size: contain;
+            animation: rotate 10s linear infinite;
+            box-shadow: 0 0 20px rgb(255, 252, 252);
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .title {
+            text-align: center;
+            color: #fff;
+            margin: 40px 0;
+            -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 20%,rgba(255,255,255,.3));
+        }
+
+        .link {
+            text-align: center;
+            animation: big 1s  linear infinite;
+        }
+
+        .link a {
+            color: #fff;
+            text-decoration: none;
+          
+        }
+
+        @keyframes big {
+            0% {
+                transform: scale(1.0);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+                
+            100% {
+                transform: scale(1.0);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <a href="https://xiapi.xiapibuy.com/lpancheng">进入我的店铺</a>
+    <div>
+        <div class="logo"></div>
+        <h2 class="title">LPanCheng</h2>
+        <div class="link">
+            <a href="https://xiapi.xiapibuy.com/lpancheng">进入>></a>
+        </div>
+    </div>
+
 </body>
+
 </html>
